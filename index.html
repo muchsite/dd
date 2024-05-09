@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dash_container">
+      <div class="dash_left">
+        <p class="dash_left_title">ProBatteri</p>
+
+        <div class="dash_link dash_link_active">
+          <img src="images/home.svg" alt="" />
+          <p>Dasboard</p>
+        </div>
+        <div class="dash_link">
+          <img src="images/cart.svg" alt="" />
+          <p>Order Managment</p>
+        </div>
+      </div>
+      <div class="dash_right">
+        <div class="dash_head">
+          <div class="head_f">
+            <h3>Dashboard</h3>
+            <div class="head_icons">
+              <div class="bell_icon">
+                <img src="./images/bell.svg" alt="" />
+                <div class="bell_not">4</div>
+              </div>
+              <img class="avatar_icon" src="./images/Avatar.svg" alt="" />
+            </div>
+          </div>
+          <div class="head_s">
+            <div class="search_input">
+              <img src="images/search.svg" alt="" />
+              <input type="text" name="" placeholder="Search" id="" />
+            </div>
+            <div class="head_ranges">
+              <div class="head_range_div">
+                <p>Status</p>
+                <img src="images/ArrowDown.svg" alt="" />
+              </div>
+              <div class="head_calendar">
+                <div class="head_calendar_div">
+                  <p>Start Date</p>
+                  <img src="images/Calendar.svg" alt="" />
+                </div>
+                <img
+                  class="calendar_arrow"
+                  src="/images/SwapRight.svg"
+                  alt=""
+                />
+                <div class="head_calendar_div">
+                  <p>Ending Date</p>
+                  <img src="images/Calendar.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="head_btns">
+              <div class="scann_btn">
+                <img src="images/scan.svg" alt="" />
+              </div>
+              <div class="filter_btn">
+                <img src="images/filter.svg" alt="" />
+                <p>Filter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dash_body">
+          <div class="dash_body_left">
+            <div class="dash_stat_container">
+              <div class="dash_stat_arrow">
+                <p>Filter by date range</p>
+                <img src="images/Path.svg" alt="" />
+              </div>
+              <div class="dash_stats">
+                <div class="dash_stat">
+                  <div class="stat_img1">
+                    <img src="images/st1.svg" alt="" />
+                  </div>
+                  <p>Total ordres between 1.800 DKK- 4.600 DKK</p>
+                  <h3>290</h3>
+                  <div class="stat_info">
+                    <span>+3.4%</span>
+                    <p>More than last month</p>
+                  </div>
+                </div>
+                <div class="dash_stat">
+                  <div class="stat_img2">
+                    <img src="images/st2.svg" alt="" />
+                  </div>
+                  <p>Visitors</p>
+                  <h3>3.7k</h3>
+                  <div class="stat_info">
+                    <span>+3.4%</span>
+                    <p>More than last month</p>
+                  </div>
+                </div>
+                <div class="dash_stat">
+                  <div class="stat_img3">
+                    <img src="images/st3.svg" alt="" />
+                  </div>
+                  <p>Total Orders</p>
+                  <h3>321</h3>
+                  <div class="stat_info">
+                    <span>+3.4%</span>
+                    <p>More than last month</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dash_chart">
+                <div class="chart_info">
+                  <h2>Total this year</h2>
+                  <div class="chart_buttons">
+                    <div class="chart_button chart_buttons_active">
+                      <h3>200.000</h3>
+                      <p>Total sales</p>
+                    </div>
+                    <div class="chart_button">
+                      <h3>1.5k</h3>
+                      <p>Total Ordre</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="dash_bottom">
+                <div class="dash_bottom_l">
+                  <h3>
+                    Visitors This <br />
+                    Month
+                  </h3>
+                  <div class="dash_bottom_icons">
+                    <div class="dash_bottom_icon dash_bottom_m">
+                      <img src="images/m.svg" alt="" />
+                      <p>30.8%</p>
+                      <div class="half_circle half_circle_m"></div>
+                    </div>
+
+                    <div class="dash_bottom_icon dash_bottom_g">
+                      <img src="images/g.svg" alt="" />
+                      <p>30.8%</p>
+                      <div class="half_circle half_circle_g"></div>
+                    </div>
+
+                    <div class="dash_bottom_icon dash_bottom_f">
+                      <img src="images/f.svg" alt="" />
+                      <p>30.8%</p>
+                      <div class="half_circle half_circle_f"></div>
+                    </div>
+
+                    <div class="dash_bottom_icon dash_bottom_v">
+                      <img src="images/v.svg" alt="" />
+                      <p>30.8%</p>
+                      <div class="half_circle half_circle_v"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dash_bottom_r">
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Google SEO</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_d"
+                      ></div>
+                    </div>
+                    <p>38.6%</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Ordre</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_green"
+                      ></div>
+                    </div>
+                    <p>30</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Google Ads</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_g"
+                      ></div>
+                    </div>
+                    <p>8.1%</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Ordre</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_green"
+                      ></div>
+                    </div>
+                    <p>30.8%</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Facebook Ads</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_green"
+                      ></div>
+                    </div>
+                    <p>30.8%</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Ordre</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_green"
+                      ></div>
+                    </div>
+                    <p>30.8%</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>APP</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_green"
+                      ></div>
+                    </div>
+                    <p>30.8%</p>
+                  </div>
+                  <div class="dash_bottom_item">
+                    <div class="dash_bottom_p">
+                      <p>Ordre</p>
+                      <div
+                        class="dash_bottom_p_cile dash_bottom_p_cile_green"
+                      ></div>
+                    </div>
+                    <p>30.8%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dash_body_right">
+            <img src="images/map.svg" alt="" />
+            <div class="dash_postal_cont">
+              <h3>Top 10 Postal Code</h3>
+              <div class="dash_costal_codes">
+                <div class="dash_postal_code">
+                  <p>1. 6300</p>
+                  <div class="postal_icon pi_1"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>6. 6300</p>
+                  <div class="postal_icon pi_6"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>2. 7000</p>
+                  <div class="postal_icon pi_2"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>7. 7000</p>
+                  <div class="postal_icon pi_7"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>3. 4000</p>
+                  <div class="postal_icon pi_3"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>8. 4000</p>
+                  <div class="postal_icon pi_8"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>4. 0999</p>
+                  <div class="postal_icon pi_4"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>9. 0999</p>
+                  <div class="postal_icon pi_9"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>5. 39762</p>
+                  <div class="postal_icon pi_5"></div>
+                </div>
+                <div class="dash_postal_code">
+                  <p>10. 39762</p>
+                  <div class="postal_icon pi_10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: [
+            {
+              label: "Total sales",
+              data: [
+                300000, 200000, 600000, 300000, 100000, 400000, 200000, 350000,
+                150000, 450000,
+              ],
+              borderWidth: 1,
+              borderRadius: 20,
+              borderSkipped: false,
+              borderColor: "#5EBC90",
+              backgroundColor: "#5EBC90",
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
